@@ -1,0 +1,160 @@
+body {
+    background-color: #000000;
+  }
+  
+  * {
+    color: #1c252c;
+  }
+  
+  h1 {
+    color: #51ff00;
+    text-align: center;
+  }
+
+  h1:hover {
+    color: #8400ff;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  #output {
+    width: 100%;
+    column-count: 4;
+    column-gap: 15px;
+  }
+  
+  #output > div {
+    margin-bottom: 15px;
+  }
+  
+
+  
+  #spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  #spinnerAndBtn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+
+
+  #autocomplete {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+  }
+  
+  .suggestion {
+    cursor: pointer;
+  }
+  
+
+  .suggestion > p {
+    font-size: 20px;
+    padding: 6px 20px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 1100px) {
+    #output {
+      column-count: 3;
+      column-gap: 10px;
+    }
+  
+    #output > div {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #output {
+      column-count: 2;
+      column-gap: 5px;
+    }
+  
+    #output > div {
+      margin-bottom: 5px;
+    }
+  }
+  @media (max-width: 500px) {
+    #output {
+      column-count: 1;
+    }
+  }
+
+
+  .wrapper {
+    text-align: center;
+    width: 230px;
+  }
+  
+  .search {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 0.7s;
+    height: 70px;
+    margin-left: 450px;
+
+  }
+  
+  .search:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .search:hover input {
+    max-width: 280px;
+  }
+  
+  .search input {
+    background: transparent;
+    border: 0;
+    max-width: 0;
+    padding: 0;
+    text-indent: 32px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: "Poppins";
+    outline: none;
+    transition: 0.7s;
+  }
+  
+  .search input::placeholder {
+    color: rgba(255, 255, 255, 0.375);
+  }
+  
+  .search span {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    color: #f9f9f9;
+    border-radius: 50px;
+    font-size: 24px;
+    pointer-events: none;
+    background-color: #63803d;
+  }
+
+  button{
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    color: #f9f9f9;
+    border-radius: inherit;
+    font-size: 24px;
+  }
